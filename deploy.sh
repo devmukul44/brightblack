@@ -1,4 +1,5 @@
 #bin/bash
+cd /home/ubuntu/brightblack;
 git fetch -a
 git rebase origin/master
-service uwsgi-emperor restart
+sudo service uwsgi-emperor restart
