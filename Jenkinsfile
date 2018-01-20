@@ -10,7 +10,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh 'ssh -oStrictHostKeyChecking=no ubuntu@205.147.101.251 brightblack/deploy.sh'
+                sh 'ssh -oStrictHostKeyChecking=no centos@34.224.5.229 jenkins_demo/brightblack/deploy.sh'
             }
         }
         stage('Test') {
